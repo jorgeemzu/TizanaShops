@@ -7,12 +7,15 @@
 :root{
     --clr-gray: #4A4A4A;
     --clr-primary:#ED5C50;
+    --clr-primary-light: hsl(4, 81%, 62%, .7);
+    --clr-gray-light: hsl(0, 0%, 29%, .65)
 }
 
 body{
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     color: var(--clr-gray);
+    background-color: #fdfcfc;
 
 }
 
@@ -50,7 +53,7 @@ p{
 
 header{
     height: 100vh;
-    background-image: url('/imgs/phone-bg.jpg');
+    background-image: url('/imgs/phone-bg2.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -84,6 +87,10 @@ nav{
     gap: 2em;
 }
 
+.gap-3{
+    gap: 3em;
+}
+
 .gap-4{
     gap: 4em;
 }
@@ -92,6 +99,17 @@ nav{
     place-items: center;
 }
 
+.grid-justify-center{
+    justify-content: center;
+}
+
+.grid-col-auto{
+    grid-template-columns: repeat(auto-fill, minmax(280px,300px));
+}
+
+.grid-col-auto-2{
+    grid-template-columns: repeat(auto-fill, minmax(280px,300px));
+}
 
 
 .flex-justify-btw{
@@ -114,9 +132,32 @@ nav{
     width: min(5vw, 30px);
 }
 
+.m-0-auto{
+    margin: 0 auto;
+}
+
+.m-top-4{
+    margin-top: 4em;
+}
+
+.m-top-8{
+    margin-top: 8em;
+}
+
+.m-bottom-05{
+    margin-bottom: .5em;
+}
 
 .m-bottom-2{
     margin-bottom: 2em;
+}
+
+.m-bottom-4{
+    margin-bottom: 4em;
+}
+
+.clr-white{
+    color: white;
 }
 
 
@@ -136,8 +177,12 @@ p.fw-600{
     padding: 1.5em 0;
 }
 
-.m-section{
+.m-section-2{
  margin: max(10vw, 5em) 0;
+}
+
+.text-align-center{
+    text-align: center;
 }
 
 .hero-img{
@@ -166,6 +211,12 @@ p.fw-600{
     background-color: white;
     border-color: var(--clr-primary);
     color: var(--clr-gray);
+}
+
+.btn-white{
+    background-color: white;
+    border-color: white;
+    color: var(--clr-primary);
 }
 
 .hero-btns{
@@ -215,7 +266,105 @@ p.fw-600{
 
 .mobile-nav-link a{
     color: var(--clr-gray);
-    font-weight: 600;
+    
+}
+
+.como-comprar{
+    background-image: url(/imgs/como\ comprar\ bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 5em 0;
+}
+
+.paso{
+    text-align: center;
+    color: white;
+}
+
+.paso-header{
+    margin-bottom: 2em;
+    background-color: white;
+    color: var(--clr-primary);
+    padding: .6em 1em;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.faq{
+    text-align: center;
+}
+
+.faq h2{
+    margin-bottom: 3em;
+}
+
+.paso-header::after{
+    position: absolute;
+    content: '';
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    left: calc(50% - 75%);
+    top: calc(50% - 75%);
+    background-color: transparent;
+    border: solid 1px white;
+}
+
+.pregunta{
+    position: relative;
+    width: min(90vw, 500px);
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    color: white;
+    text-align: left;
+}
+
+.pregunta::after{
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    background-color: var(--clr-primary);
+    position: absolute;
+}
+
+
+.pregunta-header::before{
+    content: '+';
+    right: 15px;
+    top: 50%;
+    color: white;
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+
+
+.pregunta-header{
+    padding: 1em 2em;
+    position: relative;
+    background-color: var(--clr-primary-light);
+    border-bottom: solid 1px hsla(0, 0%, 100%, 0.1);
+}
+
+.pregunta-body{
+     background-color: var(--clr-primary-light);
+     transition: .7s;
+     height: 0;
+     overflow: hidden;
+     overflow-y: auto;
+     color: white;
+     font: 500;
+}
+
+.pregunta-body.accordeon-active{
+    padding: 1em 2em;
+    height: 200px;
 }
 
 
@@ -281,7 +430,7 @@ p.fw-600{
         width: min(60vw, 740px);
     }
 
-    .about .grid-translate{
+    .grid.grid-translate{
         transform: translateX(-13vw);
         
     }
@@ -293,6 +442,10 @@ p.fw-600{
 
 
 @media screen and (max-width:800px){
+
+    .mobile-nav-link a{
+        font-weight: 600;
+    }
     .desktop-nav {
         position: absolute;
         opacity: 0;
@@ -304,6 +457,21 @@ p.fw-600{
         width: min(95vw, 500px);
         margin: 0 auto;
 
+    }
+    .desktop-nav-icons{
+        position: absolute;
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    .grid-translate-mobil{
+        transform: translateX(-13vw);
+        
+    }
+
+    .pregunta-body.accordeon-active{
+        padding: 1em 2em;
+        height: 250px;
     }
 
     
