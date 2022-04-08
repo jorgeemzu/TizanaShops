@@ -15,7 +15,7 @@ body{
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     color: var(--clr-gray);
-    background-color: #fdfcfc;
+    
 
 }
 
@@ -177,7 +177,7 @@ p.fw-600{
     padding: 1.5em 0;
 }
 
-.m-section-2{
+.m-section{
  margin: max(10vw, 5em) 0;
 }
 
@@ -291,6 +291,8 @@ p.fw-600{
     display: inline-block;
 }
 
+
+
 .faq{
     text-align: center;
 }
@@ -377,9 +379,9 @@ p.fw-600{
         width: 40vw;
     }
 
-    .m-section{
+    /* .m-section{
         margin: .8em !important ;
-    }
+    } */
     /*Desktop Utilities End*/
     header{
         background-image: url('/imgs/desktop-bg.jpg');
