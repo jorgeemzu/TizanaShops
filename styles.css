@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --clr-gray: #4a4a4a;
   --clr-primary: #ed5c50;
@@ -124,6 +128,7 @@ nav {
 
 .icon {
   width: min(5vw, 30px);
+  height: min(5vw, 30px);
 }
 
 .m-0-auto {
@@ -212,6 +217,17 @@ p.fw-600 {
   margin-top: 2em;
   flex-wrap: wrap;
   gap: 1em;
+}
+
+.fader {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: 1.5s all;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .hero p {
@@ -383,6 +399,50 @@ p.fw-600 {
   display: inline-block;
 }
 
+.contact-info-link + .contact-info-link {
+  margin-top: 1.5em;
+}
+
+.contact-info-link {
+  color: var(--clr-gray);
+  font-weight: 600;
+}
+
+.contact-info p {
+  max-width: 70%;
+}
+
+input[type="date"],
+textarea {
+  font-family: "Montserrat", sans-serif;
+  appearance: none;
+}
+
+input[type="select"] {
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+input,
+select,
+option,
+textarea {
+  padding: 0.8em 2em;
+  background-color: white;
+  border: solid 2px var(--clr-primary);
+  border-radius: 30px;
+  display: inline-block;
+}
+
+label {
+  margin-bottom: 1em;
+  display: block;
+}
+
 @media screen and (min-width: 800px) {
   /*Desktop Utilities*/
   .width-40-vw {
@@ -440,6 +500,15 @@ p.fw-600 {
 
   .grid.grid-translate {
     transform: translateX(-13vw);
+  }
+
+  .contact .grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: baseline;
+  }
+
+  form {
+    width: min(50vw, 400px);
   }
 }
 

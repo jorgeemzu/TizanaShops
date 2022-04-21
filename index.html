@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/dist/hamburgers.css">
     <script src="app.js" defer></script>
+    <script src="observers.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
     <title>Tizana Shops | Compra Online con nosotros</title>
 </head>
@@ -26,18 +27,18 @@
                         <div class="desktop-nav">
                             <ul class="flex flex-justify-btw gap-2">
                                 <li class="mobile-nav-link"><a href="">Inicio</a></li>
-                                <li class="mobile-nav-link"><a href="">Nosotros</a></li>
-                                <li class="mobile-nav-link"><a href="">Contacto</a></li>
-                                <li class="mobile-nav-link"><a href="">Haz tu pedido</a></li>
+                                <li class="mobile-nav-link"><a href="#nosotros">Nosotros</a></li>
+                                <li class="mobile-nav-link"><a href="#contact">Contacto</a></li>
+                                <li class="mobile-nav-link"><a href="#contact">Haz tu pedido</a></li>
                             </ul>
                         </div>
 
                         <div class="desktop-nav-icons flex gap-2">
                             <div class="nav-icon-link">
-                                <a href=""><img class="icon icon-width-1" src="/imgs/ig.png" alt=""></a>
+                                <a href="https://www.instagram.com/latizanashop/" target="_blank" rel="nopenner noreferer"><img class="icon icon-width-1" src="/imgs/ig.png" alt="Tizana Shop Instagram Page"></a>
                             </div>
                             <div class="nav-icon-link">
-                                <a href=""><img class="icon icon-width-1" src="/imgs/whatsapp.png" alt=""></a>
+                                <a href="https://wa.me/584120448875" target="_blank" rel="nopenner noreferer"><img class="icon icon-width-1" src="/imgs/whatsapp.png"  alt=" Tizana Shops Whatsapp contact number"></a>
                             </div>
                         </div>
     
@@ -51,24 +52,24 @@
                     <div class="mobile-nav grid grid-place-center gap-4" data-visible="false">
                         <ul class="flex flex-column gap-2">
                             <li class="mobile-nav-link"><a href="">Inicio</a></li>
-                            <li class="mobile-nav-link"><a href="">Nosotros</a></li>
-                            <li class="mobile-nav-link"><a href="">Contacto</a></li>
-                            <li class="mobile-nav-link"><a href="">Haz tu pedido</a></li>
+                            <li class="mobile-nav-link"><a href="#nosotros">Nosotros</a></li>
+                            <li class="mobile-nav-link"><a href="#contact">Contacto</a></li>
+                            <li class="mobile-nav-link"><a href="#contact">Haz tu pedido</a></li>
                         </ul>
 
                         <div class="mobile-nav-icons flex gap-2">
                             <div class="nav-icon-link">
-                                <a href=""><img class="icon icon-width-1" src="/imgs/ig.png" alt=""></a>
+                                <a href="https://www.instagram.com/latizanashop/" target="_blank" rel="nopenner noreferer"><img class="icon icon-width-1" src="/imgs/ig.png" alt="Tizana Shop Instagram Page"></a>
                             </div>
                             <div class="nav-icon-link">
-                                <a href=""><img class="icon icon-width-1" src="/imgs/whatsapp.png" alt=""></a>
+                                <a href="https://wa.me/584120448875" target="_blank" rel="nopenner noreferer"><img class="icon icon-width-1" src="/imgs/whatsapp.png"  alt=" Tizana Shops Whatsapp contact number"></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="container height-75 flex flex-align-center">
-                    <div class="hero">
+                    <div class="hero fader">
                         <div class="hero-text">
                             <div class="flex flex-align-center gap-1">
                                 <img class="icon" src="imgs/bag.png" alt="a">
@@ -80,8 +81,8 @@
                                  <p class="fw-600">A tan solo un click </p> </p>
             
                             <div class="hero-btns flex">
-                                <a class="btn btn-primary" href="">¿Como funciona?</a>
-                                <a class="btn btn-secondary" href="">Haz tu pedido</a>
+                                <a class="btn btn-primary" href="#como-comprar">¿Como funciona?</a>
+                                <a class="btn btn-secondary" href="#contact">Haz tu pedido</a>
             
                             </div>
                         </div>
@@ -95,17 +96,31 @@
         </header>
 
         <main>
-            <div class="about m-section">
+            <section class="descuentos ">
+                <div class="container">
+                    <div class="descuentos-text fader">
+                        <p>Obten un</p>
+                        <p class="descuento-span">5% de <br> Descuento</p>
+                        <p>en tu primera compra</p>
+    
+                        <a class="btn btn-secondary" href="">Haz tu pedido</a>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="about m-section" id="nosotros">
                 <div class="container">
                     <div class="grid grid-translate gap-2 grid-col-2-reverse grid-place-center">
-                        <div class="grid-text">
+                        <div class="grid-text fader">
                             <h2>¿Quienes somos?</h2>
                             <p class="m-bottom-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p>
-                            <a class="btn btn-primary" href="">Contactanos</a>
+                            <a class="btn btn-primary" href="#contact">Contactanos</a>
 
                         </div>
 
-                        <div class="grid-img">
+                        <div class="grid-img fader">
                             <img src="/imgs/tizana-about.png" alt="">
                         </div>
                     </div>
@@ -115,13 +130,13 @@
             <section class="donde-comprar m-section">
                 <div class="container">
                     <div class="grid gap-4 grid-col-2 grid-place-center">
-                        <div class="grid-text width-40-vw">
+                        <div class="grid-text width-40-vw fader">
                             <h2>¿Desde donde puedes comprar?</h2>
                             <p class="m-bottom-2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p>
                             <a class="btn btn-primary" href="">Haz tu pedido</a>
                         </div>
 
-                        <div class="grid-img  width-40-vw">
+                        <div class="grid-img  width-40-vw fader">
                             <img src="/imgs/shein phone22.png" alt="">
                         </div>
                     </div>
@@ -129,43 +144,43 @@
 
             </section>
 
-            <section class="como-comprar">
+            <section class="como-comprar" id="como-comprar">
                 <div class="container text-align-center">
-                    <h2 class="clr-white m-bottom-05" >Con nosotros comprar es muy facil</h2>
+                    <h2 class="clr-white m-bottom-05 fader" >Con nosotros comprar es muy facil</h2>
                     <!-- <p class="clr-white width-40-vw m-0-auto" >Solo sigue estos simples paso y estaras mas cerca de tener la ropa que tanto querias</p> -->
                     <div class="grid grid-justify-center gap-4 grid-col-auto como-comprar-pasos m-bottom-4 m-top-8">
-                        <div class="paso">
+                        <div class="paso fader">
                             <h3 class="paso-header" >1</h3>
                             <p>Ingresa a la pagina de Shein USA o Patpat y busca la prenda que deseas comprar</p>
                         </div>
-                        <div class="paso">
+                        <div class="paso fader">
                             <h3 class="paso-header" >2</h3>
                             <p>Copia y pega el link o el codigo de la prenda que elegiste en el formulario que te haremos llegar</p>
                         </div>
-                        <div class="paso">
+                        <div class="paso fader">
                             <h3 class="paso-header" >3</h3>
                             <p>Listo! solo tienes que esperar nuestras notificaciones de tu pedido para disfrutarlo.</p>
                         </div>
                     </div>
 
-                    <p class="clr-white width-40-vw m-0-auto m-bottom-2" >Para poder ingresar tu pedido deberás pagar el 50% del total de tu compra y el resto se deberá pagar al llegar tu paquete al país</p>
+                    <p class="clr-white width-40-vw m-0-auto m-bottom-2 fader" >Para poder ingresar tu pedido deberás pagar el 50% del total de tu compra y el resto se deberá pagar al llegar tu paquete al país</p>
 
-                    <a class="btn btn-white" href="">Haz tu pedido</a>
+                    <a class="btn btn-white fader" href="#contact">Haz tu pedido</a>
                 </div>
             </section>
 
             <section class="vida-facil m-section">
                 <div class="container">
                     <div class="grid grid-translate gap-2 grid-col-2-reverse grid-place-center">
-                        <div class="grid-text">
+                        <div class="grid-text fader">
                             <h2>Te hacemos la vida mas facil</h2>
                             <p class="m-bottom-2" >¿Tienes duda a la hora de elegir tu talla?
                                 No te preocupes, nosotros estaremos a tu lado asesorante en cada paso de tu compra.</p>
 
-                            <a class="btn btn-primary" href="">Contactanos</a>    
+                            <a class="btn btn-primary" href="#contact">Contactanos</a>    
                         </div>
 
-                        <div class="grid-img  grid-translate-mobil">
+                        <div class="grid-img fader  grid-translate-mobil">
                             <img src="/imgs/vida-facil.jpg" alt="">
                         </div>
                     </div>
@@ -174,39 +189,40 @@
 
             <section class="faq m-section-2">
                 <div class="container">
-                    <h2>Preguntas Frecuentes</h2>
+                    <h2 class="fader
+                    ">Preguntas Frecuentes</h2>
 
                     <div class="grid gap-2 ">
                         
-                        <div class="pregunta ">
+                        <div class="pregunta fader ">
                             <h3 class="pregunta-header pregunta-active" >Cuanto tardara mi pedido en llegar</h3>
                             <div class="pregunta-body">
                                 <p>Tu pedido puede tardar de tres semanas a un mes si es espress, y si es un pedido regular una mes a mes y medio.</p>
                             </div>
                         </div>
 
-                        <div class="pregunta">
+                        <div class="pregunta fader">
                             <h3 class="pregunta-header" >Cuales son los metodos de pagos</h3>
                             <div class="pregunta-body ">
                                 <p>Los métodos que usamos son: Pago móvil, Reserve, Binance, Wise (transferencias en divisas), Paypal, Divisas en efectivo.</p>
                             </div>
                         </div>
 
-                        <div class="pregunta">
+                        <div class="pregunta fader">
                             <h3 class="pregunta-header" >¿Tengo que pagar algo por adelantado?</h3>
                             <div class="pregunta-body">
                                 <p>Debes cancelar el 50% de la totalidad de tu compra para poder ingresar tu pedido.</p>
                             </div>
                         </div>
 
-                        <div class="pregunta">
+                        <div class="pregunta fader">
                             <h3 class="pregunta-header" >¿Cuanto tiempo tengo para pagar una vez mi pedido llegue a venezuela?</h3>
                             <div class="pregunta-body">
                                 <p>Al llegar el pedido al Venezuela se te dará un lapso de 2 semanas para cancelar tu pago restante y poder retirar. De no realizarlo en ese lapso de tiempo no realizaremos reembolso del abono ni se entregarán los productos.</p>
                             </div>
                         </div>
 
-                        <div class="pregunta">
+                        <div class="pregunta fader">
                             <h3 class="pregunta-header" >¿Cual es la cantidad minima de productos que puedo comprar?</h3>
                             <div class="pregunta-body">
                                 <p>La compra mínima es de 3 productos siendo envío express y 12 productos siendo envío regular.</p>
@@ -217,15 +233,64 @@
                 </div>
             </section>
 
-            <section class="descuentos m-section">
-                <div class="container">
-                    <div class="descuentos-text">
-                        <p>Obten un</p>
-                        <p class="descuento-span">5% de <br> Descuento</p>
-                        <p>en tu primera compra</p>
-    
-                        <a class="btn btn-secondary" href="">Haz tu pedido</a>
+            
 
+            <section class="contact m-section">
+                <div class="container">
+                    <div class="grid gap-2 grid-place-center">
+    
+                        <div class="contact-info fader">
+                            <h2 class="m-bottom-1" >Realiza tu Pedido</h2>
+                            <p class="m-bottom-2">Llego el momento de tener la ropa que tanto deseabas
+                                realiza tu pedido llenando el formulario o escribiendo un mensaje
+                                a nuestro numero de telefono
+                            </p>
+                            <a  href="" class="flex gap-1 contact-info-link">
+                                <img class="icon-width-1 icon" src="imgs/whatsapp.png" alt="Tizana shops Numero Whatsapp">
+                                <p>+58 412-0448875</p>
+                            </a>
+    
+                            <a  href="" class="flex gap-1 contact-info-link">
+                                <img class="icon-width-1 icon" src="imgs/ig.png" alt="Tizana shops Instagram">
+                                <p>@latizanashop</p>
+                            </a>
+                        </div>
+    
+    
+                        <form class="fader" id="contact" action="">
+                            <input type="text" name="nombre" placeholder="Nombre">
+                            <input type="text" name="apellido" placeholder="Apellido">
+                            <div>
+                                <label for="date">Fecha de Cumpleaños</label>
+                                <input type="date" name="date">
+    
+                            </div>
+                            <input type="text" placeholder="¿Como supiste de nosotros?">
+                            <input type="number" name="Telefono" id="" placeholder="Telefono">
+                            <input type="email" name="email" id="" placeholder="Email">
+    
+                            <div>
+                                <label for="date-pedido">Fecha de tu Pedido</label>
+                                <input type="date" name="date-pedido">
+    
+                            </div>
+                            <input type="text" placeholder="Link de tu producto" name="link">
+                            
+                            <div>
+    
+                                <label for="metodos">Metodo de Pago</label>
+            
+                                <select name="metodos" id="metodos">
+                                    <option value="zelle">Zelle</option>
+                                    <option value="paypal">Paypal</option>
+                                    <option value="bolivares">Bolivares</option>
+                                    
+                                </select>
+                            </div>
+    
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Observaciones"></textarea>
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </form>
                     </div>
 
                 </div>
