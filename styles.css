@@ -193,6 +193,7 @@ p.fw-600 {
   padding: 0.5em 1em;
   border: solid 1px;
   border-radius: 30px;
+  transition: all 1s;
 }
 
 .btn-primary {
@@ -201,16 +202,34 @@ p.fw-600 {
   border-color: var(--clr-primary);
 }
 
+.btn-primary:hover {
+  color: var(--clr-primary);
+  border-color: var(--clr-primary);
+  background-color: transparent;
+}
+
 .btn-secondary {
   background-color: white;
   border-color: var(--clr-primary);
   color: var(--clr-gray);
 }
 
+.btn-secondary:hover {
+  background-color: var(--clr-primary);
+  color: white;
+  border-color: var(--clr-primary);
+}
+
 .btn-white {
   background-color: white;
   border-color: white;
   color: var(--clr-primary);
+}
+
+.btn-white:hover {
+  background-color: transparent;
+  color: white;
+  border-color: white;
 }
 
 .hero-btns {
@@ -441,6 +460,23 @@ textarea {
 label {
   margin-bottom: 1em;
   display: block;
+}
+
+footer {
+  padding: 3em 0;
+  background-color: var(--clr-primary);
+}
+
+footer a,
+footer ul li {
+  color: white;
+  font-weight: 800;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 @media screen and (min-width: 800px) {
