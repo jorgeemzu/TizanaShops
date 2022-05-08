@@ -53,11 +53,11 @@ p {
   line-height: 30px;
 }
 
-header {
-  height: 110vh;
-  background-image: url("/imgs/phone-bg2.jpg");
+.header {
+  height: 130vh;
   background-position: center;
   background-size: cover;
+  transition: background 1s;
 }
 
 nav {
@@ -133,6 +133,14 @@ nav {
 
 .m-0-auto {
   margin: 0 auto;
+}
+
+.m-top-1 {
+  margin-top: 1em;
+}
+
+.m-top-3 {
+  margin-top: 3em;
 }
 
 .m-top-4 {
@@ -276,6 +284,34 @@ p.fw-600 {
 
 .overlay-show {
   background-color: hsl(0, 0%, 100%, 0.7);
+}
+
+.producto {
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.overflow-img {
+  overflow: hidden;
+}
+
+.producto img {
+  border-radius: 15px;
+  transition: all 1s;
+}
+
+.producto img:hover {
+  transform: scale(1.2);
+}
+
+.producto h3 {
+  color: var(--clr-gray);
+  margin-top: 1em;
+}
+
+.producto p {
+  color: var(--clr-primary);
+  font-weight: 900;
 }
 
 .hamburger-inner,
@@ -431,13 +467,41 @@ p.fw-600 {
   max-width: 70%;
 }
 
+.img-carrusel {
+  max-width: 400px;
+}
+
+.main-img img .imgs img {
+  width: 100%;
+}
+
+.imgs {
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.imgs img {
+  cursor: pointer;
+}
+
+.product-info span,
+.product-info h3 {
+  font-size: clamp(1.99rem, calc(1.91rem + 0.89vw), 2.54rem);
+}
+
+.stars {
+  max-width: 20px;
+}
+
+.product-info .btn {
+  display: inline-block;
+}
+
 input[type="date"],
 textarea {
   font-family: "Montserrat", sans-serif;
   appearance: none;
-}
-
-input[type="select"] {
 }
 
 form {
@@ -489,9 +553,9 @@ footer ul li {
         margin: .8em !important ;
     } */
   /*Desktop Utilities End*/
-  header {
+  /* header {
     background-image: url("/imgs/desktop-bg.jpg");
-  }
+  } */
 
   .hero {
     width: min(40vw, 500px);
@@ -514,7 +578,7 @@ footer ul li {
   }
 
   .grid-translate .grid-text {
-    min-width: 357px;
+    min-width: 460px;
   }
 
   .grid-img {

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/dist/hamburgers.css" />
+    <script src="app.js" defer></script>
+    <script src="observers.js" defer></script>
+    <script src="productoCarrusel.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tizana Shops | Compra Online con nosotros</title>
+  </head>
+  <div class="overflow">
+    <body>
+      <header>
+        <div class="overlay">
+          <div class="container">
+            <nav class="p-100 flex flex-justify-btw flex-align-center">
+              <div class="logo">
+                <img src="imgs/logo.png" alt="Tizana Shops Logo" />
+              </div>
+
+              <div class="desktop-nav">
+                <ul class="flex flex-justify-btw gap-2">
+                  <li class="mobile-nav-link">
+                    <a href="index.html">Inicio</a>
+                  </li>
+                  <li class="mobile-nav-link">
+                    <a href="#nosotros">Nosotros</a>
+                  </li>
+                  <li class="mobile-nav-link">
+                    <a href="#contact">Contacto</a>
+                  </li>
+                  <li class="mobile-nav-link">
+                    <a href="#contact">Haz tu pedido</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="desktop-nav-icons flex gap-2">
+                <div class="nav-icon-link">
+                  <a
+                    href="https://www.instagram.com/latizanashop/"
+                    target="_blank"
+                    rel="nopenner noreferer"
+                    ><img
+                      class="icon icon-width-1"
+                      src="/imgs/ig.png"
+                      alt="Tizana Shop Instagram Page"
+                  /></a>
+                </div>
+                <div class="nav-icon-link">
+                  <a
+                    href="https://wa.me/584120448875"
+                    target="_blank"
+                    rel="nopenner noreferer"
+                    ><img
+                      class="icon icon-width-1"
+                      src="/imgs/whatsapp.png"
+                      alt=" Tizana Shops Whatsapp contact number"
+                  /></a>
+                </div>
+              </div>
+
+              <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </nav>
+
+            <div
+              class="mobile-nav grid grid-place-center gap-4"
+              data-visible="false"
+            >
+              <ul class="flex flex-column gap-2">
+                <li class="mobile-nav-link"><a href="index.html">Inicio</a></li>
+                <li class="mobile-nav-link">
+                  <a href="#nosotros">Nosotros</a>
+                </li>
+                <li class="mobile-nav-link"><a href="#contact">Contacto</a></li>
+                <li class="mobile-nav-link">
+                  <a href="#contact">Haz tu pedido</a>
+                </li>
+              </ul>
+
+              <div class="mobile-nav-icons flex gap-2">
+                <div class="nav-icon-link">
+                  <a
+                    href="https://www.instagram.com/latizanashop/"
+                    target="_blank"
+                    rel="nopenner noreferer"
+                    ><img
+                      class="icon icon-width-1"
+                      src="/imgs/ig.png"
+                      alt="Tizana Shop Instagram Page"
+                  /></a>
+                </div>
+                <div class="nav-icon-link">
+                  <a
+                    href="https://wa.me/584120448875"
+                    target="_blank"
+                    rel="nopenner noreferer"
+                    ><img
+                      class="icon icon-width-1"
+                      src="/imgs/whatsapp.png"
+                      alt=" Tizana Shops Whatsapp contact number"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="container">
+          <div
+            class="grid gap-4 grid-justify-center grid-col-2-reverse m-top-8"
+          >
+            <div class="img-carrusel">
+              <div class="main-img">
+                <img src="imgs/img1.webp" class="current" alt="" />
+              </div>
+              <div class="imgs grid">
+                <img src="imgs/img1.webp" class="current" alt="" />
+                <img src="imgs/img2.webp" class="current" alt="" />
+                <img src="imgs/img3.png" class="current" alt="" />
+                <img src="imgs/img4.webp" class="current" alt="" />
+                <img src="imgs/img5.webp" class="current" alt="" />
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Nombre Producto</h3>
+
+              <span class="m-top-1">$10</span>
+              <p class="m-top-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique distinctio quidem ullam illo hic, aperiam dicta
+                aliquid enim sequi maiores odio, vero incidunt nam quasi,
+                dolorum mollitia itaque porro labore!
+              </p>
+              <div
+                class="stars m-top-1 flex gap-2 flex-justify-btw flex-align-center"
+              >
+                <img src="imgs/estrella.png" alt="" />
+                <img src="imgs/estrella.png" alt="" />
+                <img src="imgs/estrella.png" alt="" />
+                <img src="imgs/estrella.png" alt="" />
+                <img src="imgs/estrella.png" alt="" />
+              </div>
+
+              <a
+                class="btn btn-primary m-top-3"
+                href="https://wa.me/584120448875"
+                target="_blank"
+                rel="nopenner noreferer"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+    </body>
+  </div>
+</html>
